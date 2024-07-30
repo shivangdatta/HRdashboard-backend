@@ -1,0 +1,5 @@
+const allowedOrigins = [
+    'http://HRdashboard-backend001a.onrender.com'
+]
+
+module.exports = allowedOrigins

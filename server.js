@@ -3,12 +3,13 @@ const express = require('express')
 const trycon = require('./dbConfig/dbConn')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const corsOptions = require('./dbConfig/corsOptions')
 
 const app = express()
 const PORT = process.env.PORT || 3500
 
 trycon()
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(express.json())
 
 
